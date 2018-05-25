@@ -2,7 +2,7 @@ FROM opennms/openjdk:latest
 
 LABEL maintainer "Ronny Trommer <ronny@opennms.org>"
 
-ARG REMOTE_POLLER_VERSION=develop
+ARG REMOTE_POLLER_VERSION=stable
 
 ENV REMOTE_POLLER_URI http://localhost:8980/opennms-remoting
 ENV REMOTE_POLLER_LOCATION Default
