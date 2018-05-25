@@ -1,0 +1,13 @@
+version: '2'
+services:
+  remote-poller:
+    image: opennms/remote-poller:latest
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - TZ=Europe/Berlin
+      - REMOTE_POLLER_URI=http://myOpennms:8980/opennms-remoting
+      - REMOTE_POLLER_LOCATION=myLocation
+      - REMOTE_POLLER_USERNAME=myRemotingUser
+      - REMOTE_POLLER_PASSWORD=myRemotingPass
+    command: ["-f"]
