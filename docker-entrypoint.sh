@@ -1,8 +1,8 @@
 #!/bin/bash -e
 # =====================================================================
-# Build script running OpenNMS Minion in Docker environment
+# Build script running OpenNMS Remote Poller in Docker environment
 #
-# Source: https://github.com/indigo423/docker-minion
+# Source: https://github.com/opennms-forge/docker-remote-poller
 # Web: https://www.opennms.org
 #
 # =====================================================================
