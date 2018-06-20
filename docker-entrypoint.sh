@@ -25,7 +25,7 @@ start() {
   cd ${REMOTE_POLLER_HOME}/bin
   java ${REMOTE_POLLER_JVM_ARGS} \
    -Djava.rmi.activation.port="${REMOTE_POLLER_RMI_PORT}" \
-   -Djava.awt.headless=true -Djava.rmi.activation.port="$RMI_PORT" \
+   -Djava.awt.headless=true -Djava.rmi.activation.port="${REMOTE_POLLER_RMI_PORT}" \
    -jar remote-poller.jar \
    --url=${REMOTE_POLLER_URI} \
    --location=${REMOTE_POLLER_LOCATION} \
